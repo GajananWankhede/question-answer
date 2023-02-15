@@ -1,0 +1,21 @@
+server:
+  port: 7192
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: Aai@2070
+    url: jdbc:mysql://localhost:3306/questionschema
+    username: root
+
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+    show-sql: true
+  profiles:
+    active: jdbc
+  security:
+    user:
+      name: root
+      password: Aai@2070
